@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bl.QuantityMeasurementTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-05-21T04:12:28" hostname="DESKTOP-2TJPHRI" time="0.002">
+<testsuite name="com.bl.QuantityMeasurementTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-05-21T05:11:28" hostname="DESKTOP-2TJPHRI" time="0.006">
   <properties/>
-  <testcase name="givenTwoFeets_WhenBothFeetAreNotEquals_ShouldReturnFalse" classname="com.bl.QuantityMeasurementTest" time="0.002"/>
+  <testcase name="givenTwoFeets_WhenBothFeetAreNotEquals_ShouldReturnFalse" classname="com.bl.QuantityMeasurementTest" time="0.003"/>
+  <testcase name="givenTwoFeets_WhenBothFeetAreEquals_ShouldReturnTrue" classname="com.bl.QuantityMeasurementTest" time="0.001"/>
+  <testcase name="givenFeets_WhenFeetsAreNull_ShouldReturnFalse" classname="com.bl.QuantityMeasurementTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

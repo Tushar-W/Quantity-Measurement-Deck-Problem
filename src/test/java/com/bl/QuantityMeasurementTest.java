@@ -1,14 +1,14 @@
 package com.bl;
 
+import com.bl.exception.QuantityMeasurementException;
 import com.bl.model.Feet;
-import com.bl.service.QuantityMeasurement;
 import org.junit.Assert;
 import org.junit.Test;
 
 public class QuantityMeasurementTest {
 
     @Test
-    public void givenTwoFeets_WhenBothFeetAreEquals_ShouldReturnTrue() {
+    public void givenTwoFeets_WhenBothFeetAreEquals_ShouldReturnTrue() throws QuantityMeasurementException {
         Feet feet1 = new Feet(0.0);
         Feet feet2 = new Feet(0.0);
         boolean equals = feet1.equals(feet2);
@@ -16,10 +16,20 @@ public class QuantityMeasurementTest {
     }
 
     @Test
-    public void givenTwoFeets_WhenBothFeetAreNotEquals_ShouldReturnFalse() {
+    public void givenTwoFeets_WhenBothFeetAreNotEquals_ShouldReturnFalse() throws QuantityMeasurementException {
         Feet feet1 = new Feet(0.0);
         Feet feet2 = new Feet(2.0);
         boolean equals = feet1.equals(feet2);
         Assert.assertFalse(equals);
+    }
+
+    @Test
+    public void givenFeets_WhenFeetsAreNull_ShouldReturnFalse() {
+        try {
+            Feet feet1 = new Feet(null);
+            Feet feet2 = new Feet(null);
+        }catch (QuantityMeasurementException e){
+            Assert.assertEquals(QuantityMeasurementException.ExceptionType.NULL_VALUE, e.type);
+        }
     }
 }
