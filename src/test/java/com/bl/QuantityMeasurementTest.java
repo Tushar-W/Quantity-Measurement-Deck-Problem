@@ -84,4 +84,11 @@ public class QuantityMeasurementTest {
         Assert.assertTrue(inch.equals(inch));
     }
 
+    @Test
+    public void givenInches_WhenTypeOfInchesAreEqual_ShouldReturnTrue() {
+        Inch inch = new Inch(0);
+        Inch inch2 = new Inch(0);
+        Assert.assertTrue(inch.equals(inch2));
+    }
+
 }
