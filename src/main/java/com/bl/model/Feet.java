@@ -11,7 +11,7 @@ public class Feet {
     /**
      * value variable store the number entered by the user as the input
      */
-    private final double value;
+    private final int value;
     /**
      * Parameterized constructor to take one input value
      * @param value

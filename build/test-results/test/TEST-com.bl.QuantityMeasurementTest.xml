@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bl.QuantityMeasurementTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-05-21T16:58:55" hostname="DESKTOP-2TJPHRI" time="0.004">
+<testsuite name="com.bl.QuantityMeasurementTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2020-05-21T17:11:34" hostname="DESKTOP-2TJPHRI" time="0.03">
   <properties/>
-  <testcase name="givenInches_WhenBothInchesAreNotEquals_ShouldReturnFalse" classname="com.bl.QuantityMeasurementTest" time="0.004"/>
+  <testcase name="givenFeets_WhenTypeOfFeetsAreEqual_ShouldReturnTrue" classname="com.bl.QuantityMeasurementTest" time="0.004"/>
+  <testcase name="givenTwoFeets_WhenBothFeetAreNotEquals_ShouldReturnFalse" classname="com.bl.QuantityMeasurementTest" time="0.001"/>
+  <testcase name="givenFeets_WhenReferenceOfFeetsAreEqual_ShouldReturnTrue" classname="com.bl.QuantityMeasurementTest" time="0.001"/>
+  <testcase name="givenTwoFeets_WhenBothFeetAreEquals_ShouldReturnTrue" classname="com.bl.QuantityMeasurementTest" time="0.0"/>
+  <testcase name="givenFeets_WhenFeetsAreNull_ShouldReturnThrowException" classname="com.bl.QuantityMeasurementTest" time="0.006"/>
+  <testcase name="givenFeets_WhenValueOfObjectAreEqual_ShouldReturnTrue" classname="com.bl.QuantityMeasurementTest" time="0.0"/>
+  <testcase name="givenTwoInch_WhenBothInchAreEquals_ShouldReturnTrue" classname="com.bl.QuantityMeasurementTest" time="0.006"/>
+  <testcase name="givenInches_WhenInchesAreNull_ShouldReturnThrowException" classname="com.bl.QuantityMeasurementTest" time="0.0"/>
+  <testcase name="givenInches_WhenBothInchesAreNotEquals_ShouldReturnFalse" classname="com.bl.QuantityMeasurementTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
