@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bl.QuantityMeasurementTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-05-21T13:12:16" hostname="DESKTOP-2TJPHRI" time="0.003">
+<testsuite name="com.bl.QuantityMeasurementTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2020-05-21T13:34:44" hostname="DESKTOP-2TJPHRI" time="0.007">
   <properties/>
-  <testcase name="givenFeets_WhenTypeOfFeetsAreEqual_ShouldReturnTrue" classname="com.bl.QuantityMeasurementTest" time="0.003"/>
+  <testcase name="givenFeets_WhenTypeOfFeetsAreEqual_ShouldReturnTrue" classname="com.bl.QuantityMeasurementTest" time="0.002"/>
+  <testcase name="givenTwoFeets_WhenBothFeetAreNotEquals_ShouldReturnFalse" classname="com.bl.QuantityMeasurementTest" time="0.0"/>
+  <testcase name="givenFeets_WhenReferenceOfFeetsAreEqual_ShouldReturnTrue" classname="com.bl.QuantityMeasurementTest" time="0.0"/>
+  <testcase name="givenTwoFeets_WhenBothFeetAreEquals_ShouldReturnTrue" classname="com.bl.QuantityMeasurementTest" time="0.0"/>
+  <testcase name="givenFeets_WhenFeetsAreNull_ShouldReturnThrowException" classname="com.bl.QuantityMeasurementTest" time="0.001"/>
+  <testcase name="givenFeets_WhenValueOfObjectAreEqual_ShouldReturnTrue" classname="com.bl.QuantityMeasurementTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
