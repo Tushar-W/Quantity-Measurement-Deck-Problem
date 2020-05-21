@@ -16,7 +16,7 @@ public class Feet {
      * Parameterized constructor to take one input value
      * @param value
      */
-    public Feet(Double value) throws QuantityMeasurementException {
+    public Feet(Integer value) throws QuantityMeasurementException {
         try{
             this.value = value;
         }catch (NullPointerException e) {
