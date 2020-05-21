@@ -2,6 +2,7 @@ package com.bl;
 
 import com.bl.exception.QuantityMeasurementException;
 import com.bl.model.Feet;
+import com.bl.model.Inch;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -52,4 +53,12 @@ public class QuantityMeasurementTest {
         Feet feet2 = new Feet(3);
         Assert.assertTrue(feet1.equals(feet2));
     }
+
+    @Test
+    public void givenTwoInch_WhenBothInchAreEquals_ShouldReturnTrue() {
+        Inch inch = new Inch(0);
+        Inch inch2 = new Inch(0);
+        Assert.assertTrue(inch.equals(inch2));
+    }
+
 }
