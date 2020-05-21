@@ -38,4 +38,12 @@ public class QuantityMeasurementTest {
         Feet feet1 = new Feet(2);
         Assert.assertTrue(feet1.equals(feet1));
     }
+
+    @Test
+    public void givenFeets_WhenTypeOfFeetsAreEqual_ShouldReturnTrue() {
+        Feet feet1 = new Feet(0);
+        Feet feet2 = new Feet(0);
+        Assert.assertTrue(feet1.equals(feet2));
+
+    }
 }
