@@ -77,4 +77,11 @@ public class QuantityMeasurementTest {
             Assert.assertEquals(QuantityMeasurementException.ExceptionType.NULL_VALUE, e.type);
         }
     }
+
+    @Test
+    public void givenInches_WhenReferenceOfInchesAreEqual_ShouldReturnTrue() {
+        Inch inch = new Inch(2);
+        Assert.assertTrue(inch.equals(inch));
+    }
+
 }
