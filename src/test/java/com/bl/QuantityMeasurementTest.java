@@ -9,7 +9,7 @@ import org.junit.Test;
 public class QuantityMeasurementTest {
 
     @Test
-    public void givenTwoFeets_WhenBothFeetAreEquals_ShouldReturnTrue() throws QuantityMeasurementException {
+    public void givenTwoFeets_WhenBothFeetAreEquals_ShouldReturnTrue() {
         Feet feet1 = new Feet(0);
         Feet feet2 = new Feet(0);
         boolean equals = feet1.equals(feet2);
@@ -17,7 +17,7 @@ public class QuantityMeasurementTest {
     }
 
     @Test
-    public void givenTwoFeets_WhenBothFeetAreNotEquals_ShouldReturnFalse() throws QuantityMeasurementException {
+    public void givenTwoFeets_WhenBothFeetAreNotEquals_ShouldReturnFalse() {
         Feet feet1 = new Feet(0);
         Feet feet2 = new Feet(2);
         boolean equals = feet1.equals(feet2);
@@ -63,9 +63,18 @@ public class QuantityMeasurementTest {
 
     @Test
     public void givenInches_WhenBothInchesAreNotEquals_ShouldReturnFalse() {
-        Feet feet1 = new Feet(0);
-        Feet feet2 = new Feet(2);
-        Assert.assertFalse(feet1.equals(feet2));
+        Inch inch = new Inch(0);
+        Inch inch2 = new Inch(2);
+        Assert.assertFalse(inch.equals(inch2));
     }
 
+    @Test
+    public void givenInches_WhenInchesAreNull_ShouldReturnThrowException() {
+        try {
+            Inch inch = new Inch(null);
+            Inch inch2 = new Inch(null);
+        }catch (QuantityMeasurementException e){
+            Assert.assertEquals(QuantityMeasurementException.ExceptionType.NULL_VALUE, e.type);
+        }
+    }
 }
