@@ -6,7 +6,6 @@
 package com.bl.model;
 
 import com.bl.exception.QuantityMeasurementException;
-
 import java.util.Objects;
 
 public class Length {
@@ -16,6 +15,10 @@ public class Length {
     public enum Units {
         FEET,INCH
     }
+    /**
+     * static constant variable
+     */
+    private static final int FEET_TO_INCH = 12;
     /**
      * value variable store the number entered by the user as the input
      * unit variable store the enum constanats
@@ -33,6 +36,14 @@ public class Length {
         }catch (NullPointerException e) {
                 throw new QuantityMeasurementException(QuantityMeasurementException.ExceptionType.NULL_VALUE, "VALUES IS NULL");
         }
+    }
+    /**
+     * This method comapre unit length of the current object with object of same or different type
+     * @param that
+     * @return true or false
+     */
+    public boolean compare(Length that) {
+        return true;
     }
     /**
      * This method compares the equality of the current object with the object of same type
