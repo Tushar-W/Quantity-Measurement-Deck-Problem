@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bl.QuantityMeasurementTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2020-05-21T17:34:54" hostname="DESKTOP-2TJPHRI" time="0.013">
+<testsuite name="com.bl.QuantityMeasurementTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2020-05-21T17:38:29" hostname="DESKTOP-2TJPHRI" time="0.02">
   <properties/>
   <testcase name="givenFeets_WhenTypeOfFeetsAreEqual_ShouldReturnTrue" classname="com.bl.QuantityMeasurementTest" time="0.002"/>
   <testcase name="givenTwoFeets_WhenBothFeetAreNotEquals_ShouldReturnFalse" classname="com.bl.QuantityMeasurementTest" time="0.0"/>
   <testcase name="givenFeets_WhenReferenceOfFeetsAreEqual_ShouldReturnTrue" classname="com.bl.QuantityMeasurementTest" time="0.0"/>
   <testcase name="givenTwoFeets_WhenBothFeetAreEquals_ShouldReturnTrue" classname="com.bl.QuantityMeasurementTest" time="0.0"/>
-  <testcase name="givenInches_WhenTypeOfInchesAreEqual_ShouldReturnTrue" classname="com.bl.QuantityMeasurementTest" time="0.001"/>
-  <testcase name="givenInches_WhenReferenceOfInchesAreEqual_ShouldReturnTrue" classname="com.bl.QuantityMeasurementTest" time="0.0"/>
-  <testcase name="givenFeets_WhenFeetsAreNull_ShouldReturnThrowException" classname="com.bl.QuantityMeasurementTest" time="0.001"/>
+  <testcase name="givenInches_WhenTypeOfInchesAreEqual_ShouldReturnTrue" classname="com.bl.QuantityMeasurementTest" time="0.002"/>
+  <testcase name="givenInches_WhenReferenceOfInchesAreEqual_ShouldReturnTrue" classname="com.bl.QuantityMeasurementTest" time="0.001"/>
+  <testcase name="givenFeets_WhenFeetsAreNull_ShouldReturnThrowException" classname="com.bl.QuantityMeasurementTest" time="0.005"/>
   <testcase name="givenFeets_WhenValueOfObjectAreEqual_ShouldReturnTrue" classname="com.bl.QuantityMeasurementTest" time="0.001"/>
   <testcase name="givenTwoInch_WhenBothInchAreEquals_ShouldReturnTrue" classname="com.bl.QuantityMeasurementTest" time="0.001"/>
   <testcase name="givenInches_WhenInchesAreNull_ShouldReturnThrowException" classname="com.bl.QuantityMeasurementTest" time="0.001"/>
-  <testcase name="givenInches_WhenValueOfObjectAreEqual_ShouldReturnTrue" classname="com.bl.QuantityMeasurementTest" time="0.001"/>
-  <testcase name="givenInches_WhenBothInchesAreNotEquals_ShouldReturnFalse" classname="com.bl.QuantityMeasurementTest" time="0.0"/>
+  <testcase name="givenInches_WhenValueOfObjectAreEqual_ShouldReturnTrue" classname="com.bl.QuantityMeasurementTest" time="0.0"/>
+  <testcase name="givenInches_WhenBothInchesAreNotEquals_ShouldReturnFalse" classname="com.bl.QuantityMeasurementTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
