@@ -9,7 +9,7 @@ public class QuantityMeasurementException extends RuntimeException {
      * enum for take constants Exception Types
      */
     public enum ExceptionType{
-        NULL_VALUE
+        NEGATIVE_VALUE, NULL_VALUE
     }
     /**
      * constructor to take two input values
