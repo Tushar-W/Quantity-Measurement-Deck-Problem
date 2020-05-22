@@ -175,4 +175,11 @@ public class QuantityMeasurementTest {
         Assert.assertTrue(compareCheck);
     }
 
+    @Test
+    public void given12InchAnd1Feet_WhenCompare_ShoulodReturnBothAreEqual() {
+        Length inch1 = new Length(Length.Units.INCH, 12);
+        Length feet1 = new Length(Length.Units.FEET, 1);
+        boolean compareCheck = inch1.compare(feet1);
+        Assert.assertTrue(compareCheck);
+    }
 }
