@@ -208,4 +208,14 @@ public class QuantityMeasurementTest {
             Assert.assertEquals(QuantityMeasurementException.ExceptionType.NEGATIVE_VALUE, e.type);
         }
     }
+
+    @Test
+    public void givenYards_WhenYardsAreNull_ShouldReturnThrowException() {
+        try {
+            Length yard = new Length(Unit.YARD, null);
+            Length yard2 = new Length(Unit.YARD, null);
+        }catch (QuantityMeasurementException e){
+            Assert.assertEquals(QuantityMeasurementException.ExceptionType.NULL_VALUE, e.type);
+        }
+    }
 }
