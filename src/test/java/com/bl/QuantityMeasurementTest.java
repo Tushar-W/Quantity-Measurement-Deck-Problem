@@ -169,7 +169,7 @@ public class QuantityMeasurementTest {
     }
 
     @Test
-    public void given1FeetAnd12Inch_WhenCompare_ShoulodReturnBothAreEqual() {
+    public void given1FeetAnd12Inch_WhenCompare_ShouldReturnBothAreEqual() {
         Length feet1 = new Length(Unit.FEET, 1);
         Length inch1 = new Length(Unit.INCH, 12);
         boolean compareCheck = feet1.compare(inch1);
@@ -177,10 +177,17 @@ public class QuantityMeasurementTest {
     }
 
     @Test
-    public void given12InchAnd1Feet_WhenCompare_ShoulodReturnBothAreEqual() {
+    public void given12InchAnd1Feet_WhenCompare_ShouldReturnBothAreEqual() {
         Length inch1 = new Length(Unit.INCH, 12);
         Length feet1 = new Length(Unit.FEET, 1);
         boolean compareCheck = inch1.compare(feet1);
         Assert.assertTrue(compareCheck);
+    }
+
+    @Test
+    public void givenTwoYard_WhenBothAreEqual_ShouldReturnTrue() {
+        Length yard1 = new Length(Unit.YARD, 0);
+        Length yard2 = new Length(Unit.YARD, 0);
+        Assert.assertTrue(yard1.equals(yard2));
     }
 }
