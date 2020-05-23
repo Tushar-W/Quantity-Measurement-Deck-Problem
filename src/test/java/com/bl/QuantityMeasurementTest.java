@@ -197,4 +197,15 @@ public class QuantityMeasurementTest {
         Length yard2 = new Length(Unit.YARD, 2);
         Assert.assertFalse(yard.equals(yard2));
     }
+
+    @Test
+    public void givenTwoYard_WhenYardsAreNegative_ShouldReturnThrowException() {
+        try{
+            Length yard1 = new Length(Unit.YARD, -1);
+            Length yard2 = new Length(Unit.YARD, -2);
+            boolean equals = yard1.equals(yard2);
+        }catch (QuantityMeasurementException e){
+            Assert.assertEquals(QuantityMeasurementException.ExceptionType.NEGATIVE_VALUE, e.type);
+        }
+    }
 }
