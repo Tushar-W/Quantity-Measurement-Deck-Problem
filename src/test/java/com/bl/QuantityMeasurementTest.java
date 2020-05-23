@@ -218,4 +218,12 @@ public class QuantityMeasurementTest {
             Assert.assertEquals(QuantityMeasurementException.ExceptionType.NULL_VALUE, e.type);
         }
     }
+
+    @Test
+    public void givenYard_WhenTypeOfYardAreEqual_ShouldReturnTrue() {
+        Length yard = new Length(Unit.YARD, 0);
+        Length yard2 = new Length(Unit.YARD, 0);
+        Assert.assertTrue(yard.equals(yard2));
+    }
+
 }
