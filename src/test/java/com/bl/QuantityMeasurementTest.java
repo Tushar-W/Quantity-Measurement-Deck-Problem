@@ -190,4 +190,11 @@ public class QuantityMeasurementTest {
         Length yard2 = new Length(Unit.YARD, 0);
         Assert.assertTrue(yard1.equals(yard2));
     }
+
+    @Test
+    public void givenYard_WhenBothYardsAreNotEquals_ShouldReturnFalse() {
+        Length yard = new Length(Unit.YARD, 0);
+        Length yard2 = new Length(Unit.YARD, 2);
+        Assert.assertFalse(yard.equals(yard2));
+    }
 }
