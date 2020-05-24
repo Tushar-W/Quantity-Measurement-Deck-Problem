@@ -317,4 +317,13 @@ public class QuantityMeasurementTest {
         }
     }
 
+    @Test
+    public void given1CentimeterAnd1Inch_WhenCompareBothLengthAreNotEqual_ShouldReturnFalse() {
+        Length cm1 = new Length(Unit.CENTIMETER, 1);
+        Length inch1 = new Length(Unit.INCH, 1);
+        boolean compareCheck = cm1.compare(inch1);
+        Assert.assertFalse(compareCheck);
+    }
+
+
 }
