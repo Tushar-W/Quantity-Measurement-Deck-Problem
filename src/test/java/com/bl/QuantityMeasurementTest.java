@@ -306,4 +306,15 @@ public class QuantityMeasurementTest {
             Assert.assertEquals(QuantityMeasurementException.ExceptionType.NEGATIVE_VALUE, e.type);
         }
     }
+
+    @Test
+    public void givenCentimeter_WhenCentimeterAreNull_ShouldReturnThrowException() {
+        try {
+            Length cm = new Length(Unit.CENTIMETER, null);
+            Length cm2 = new Length(Unit.CENTIMETER, null);
+        }catch (QuantityMeasurementException e){
+            Assert.assertEquals(QuantityMeasurementException.ExceptionType.NULL_VALUE, e.type);
+        }
+    }
+
 }
