@@ -372,4 +372,12 @@ public class QuantityMeasurementTest {
         boolean compareCheck = yard1.compare(cm1);
         Assert.assertTrue(compareCheck);
     }
+
+    @Test
+    public void given2InchAnd2Inch_WhenAddBothLengthOfInches_ShouldReturnAddition() {
+        Length inch1 = new Length(Unit.INCH, 2);
+        Length inch2 = new Length(Unit.INCH, 2);
+        double addition = inch1.add(inch2);
+        Assert.assertEquals(4,addition,0.0);
+    }
 }
