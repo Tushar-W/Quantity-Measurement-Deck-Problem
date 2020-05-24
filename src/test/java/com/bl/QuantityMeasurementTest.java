@@ -349,5 +349,13 @@ public class QuantityMeasurementTest {
         Assert.assertTrue(compareCheck);
     }
 
+    @Test
+    public void given2InchAnd5Centimeter_WhenCompareBothLengthEqual_ShouldReturnTrue() {
+        Length inch1 = new Length(Unit.INCH, 2);
+        Length cm1 = new Length(Unit.CENTIMETER, 5);
+        boolean compareCheck = inch1.compare(cm1);
+        Assert.assertTrue(compareCheck);
+    }
+
 
 }
