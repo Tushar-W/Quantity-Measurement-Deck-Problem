@@ -57,4 +57,8 @@ public class Length {
     public int hashCode() {
         return Objects.hash(value, unit);
     }
+
+    public double add(Length that) {
+        return unit.add(this,that);
+    }
 }

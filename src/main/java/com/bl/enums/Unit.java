@@ -26,4 +26,8 @@ public enum Unit {
     public boolean compare(Length l1, Length l2){
         return  Double.compare(l1.value*l1.unit.baseUnitConversion, l2.value*l2.unit.baseUnitConversion) == 0;
     }
+
+    public double add(Length l1, Length l2) {
+        return Double.sum(l1.value*l1.unit.baseUnitConversion, l2.value*l2.unit.baseUnitConversion);
+    }
 }
