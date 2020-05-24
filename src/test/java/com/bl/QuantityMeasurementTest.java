@@ -396,4 +396,12 @@ public class QuantityMeasurementTest {
         double addition = feet1.add(feet2);
         Assert.assertEquals(24,addition,0.0);
     }
+
+    @Test
+    public void given2InchAnd2Centimeter_WhenAddBothLengthOfUnits_ShouldReturnAdditionInInch() {
+        Length inch = new Length(Unit.INCH, 2);
+        Length cm = new Length(Unit.CENTIMETER, 2);
+        double addition = inch.add(cm);
+        Assert.assertEquals(2.8,addition,0.0);
+    }
 }
