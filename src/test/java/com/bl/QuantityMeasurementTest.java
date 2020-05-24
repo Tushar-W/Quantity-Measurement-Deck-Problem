@@ -3,6 +3,7 @@
 import com.bl.enums.Unit;
 import com.bl.exception.QuantityMeasurementException;
 import com.bl.model.Length;
+import com.bl.model.Volume;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -403,5 +404,13 @@ public class QuantityMeasurementTest {
         Length cm = new Length(Unit.CENTIMETER, 2);
         double addition = inch.add(cm);
         Assert.assertEquals(2.8,addition,0.0);
+    }
+
+    @Test
+    public void givenLitre_WhenBothLitreAreEquals_ShouldReturnTrue() {
+        Volume litre = new Volume(Unit.LITRE, 0.0);
+        Volume litre2 = new Volume(Unit.LITRE, 0.0);
+        boolean equals = litre.equals(litre2);
+        Assert.assertTrue(equals);
     }
 }
