@@ -380,4 +380,12 @@ public class QuantityMeasurementTest {
         double addition = inch1.add(inch2);
         Assert.assertEquals(4,addition,0.0);
     }
+
+    @Test
+    public void given1FeetAnd2Inch_WhenAddBothLengthOfUnits_ShouldReturnAdditionInInch() {
+        Length feet1 = new Length(Unit.FEET, 1);
+        Length inch2 = new Length(Unit.INCH, 2);
+        double addition = feet1.add(inch2);
+        Assert.assertEquals(14,addition,0.0);
+    }
 }
