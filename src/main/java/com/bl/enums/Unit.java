@@ -6,7 +6,7 @@ public enum Unit {
     /**
      * declaring enum constatnts
      */
-    FEET(12), INCH(1), YARD(36);
+    FEET(12), INCH(1), YARD(36), CENTIMETER(2);
     /**
      * final constant variable
      */
