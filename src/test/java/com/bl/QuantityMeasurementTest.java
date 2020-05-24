@@ -290,9 +290,20 @@ public class QuantityMeasurementTest {
     }
 
     @Test
-    public void givenCentimeter_WhenBothYardsAreNotEquals_ShouldReturnFalse() {
+    public void givenCentimeter_WhenBothCentimeterAreNotEquals_ShouldReturnFalse() {
         Length cm1 = new Length(Unit.CENTIMETER, 0);
         Length cm2 = new Length(Unit.CENTIMETER, 2);
         Assert.assertFalse(cm1.equals(cm2));
+    }
+
+    @Test
+    public void givenTwoCentimeter_WhenCentimeterAreNegative_ShouldReturnThrowException() {
+        try{
+            Length cm1 = new Length(Unit.CENTIMETER, -1);
+            Length cm2 = new Length(Unit.CENTIMETER, -2);
+            boolean equals = cm1.equals(cm2);
+        }catch (QuantityMeasurementException e){
+            Assert.assertEquals(QuantityMeasurementException.ExceptionType.NEGATIVE_VALUE, e.type);
+        }
     }
 }
