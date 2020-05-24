@@ -288,4 +288,11 @@ public class QuantityMeasurementTest {
         Length cm2 = new Length(Unit.CENTIMETER, 0);
         Assert.assertTrue(cm1.equals(cm2));
     }
+
+    @Test
+    public void givenCentimeter_WhenBothYardsAreNotEquals_ShouldReturnFalse() {
+        Length cm1 = new Length(Unit.CENTIMETER, 0);
+        Length cm2 = new Length(Unit.CENTIMETER, 2);
+        Assert.assertFalse(cm1.equals(cm2));
+    }
 }
