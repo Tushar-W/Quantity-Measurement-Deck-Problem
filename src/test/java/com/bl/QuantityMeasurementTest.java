@@ -333,5 +333,13 @@ public class QuantityMeasurementTest {
         Assert.assertFalse(compareCheck);
     }
 
+    @Test
+    public void given1YardAnd1Centimeter_WhenCompareBothLengthAreNotEqual_ShouldReturnFalse() {
+        Length yard1 = new Length(Unit.YARD, 1);
+        Length cm1 = new Length(Unit.CENTIMETER, 36);
+        boolean compareCheck = yard1.compare(cm1);
+        Assert.assertFalse(compareCheck);
+    }
+
 
 }
