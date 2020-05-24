@@ -325,5 +325,13 @@ public class QuantityMeasurementTest {
         Assert.assertFalse(compareCheck);
     }
 
+    @Test
+    public void given1FeetAnd1Centimeter_WhenCompareBothLengthAreNotEqual_ShouldReturnFalse() {
+        Length feet1 = new Length(Unit.FEET, 1);
+        Length cm1 = new Length(Unit.CENTIMETER, 1);
+        boolean compareCheck = feet1.compare(cm1);
+        Assert.assertFalse(compareCheck);
+    }
+
 
 }
