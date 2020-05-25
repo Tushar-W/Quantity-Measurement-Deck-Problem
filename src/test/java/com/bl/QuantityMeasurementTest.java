@@ -413,4 +413,12 @@ public class QuantityMeasurementTest {
         boolean equals = litre.equals(litre2);
         Assert.assertTrue(equals);
     }
+
+    @Test
+    public void givenLitre_WhenBothLitreAreNotEquals_ShouldReturnFalse() {
+        Volume litre = new Volume(Unit.LITRE, 0.0);
+        Volume litre2 = new Volume(Unit.LITRE, 2.0);
+        boolean equals = litre.equals(litre2);
+        Assert.assertFalse(equals);
+    }
 }

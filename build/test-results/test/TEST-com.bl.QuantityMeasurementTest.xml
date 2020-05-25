@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bl.QuantityMeasurementTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-05-24T19:53:03" hostname="DESKTOP-2TJPHRI" time="0.004">
+<testsuite name="com.bl.QuantityMeasurementTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-05-25T02:57:07" hostname="DESKTOP-2TJPHRI" time="0.017">
   <properties/>
-  <testcase name="givenLitre_WhenBothLitreAreEquals_ShouldReturnTrue" classname="com.bl.QuantityMeasurementTest" time="0.004"/>
+  <testcase name="givenLitre_WhenBothLitreAreNotEquals_ShouldReturnFalse" classname="com.bl.QuantityMeasurementTest" time="0.017"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
