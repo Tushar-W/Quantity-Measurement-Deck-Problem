@@ -2,13 +2,15 @@ package com.bl.enums;
 
 import com.bl.model.Length;
 import com.bl.model.Volume;
+import com.bl.model.Weight;
 
 public enum Unit {
     /**
      * declaring enum constatnts
      */
     FEET(12.0), INCH(1.0), YARD(36.0), CENTIMETER(0.4),
-    LITRE(1.0), GALLON(5.0),MILLILITRES(0.001);
+    LITRE(1.0), GALLON(5.0),MILLILITRES(0.001),
+    GRAM(1);
     /**
      * final constant variable
      */
@@ -51,5 +53,21 @@ public enum Unit {
      */
     public double addVolumes(Volume v1, Volume v2) {
         return Double.sum(v1.value*v1.unit.baseUnitConversion, v2.value*v2.unit.baseUnitConversion);
+    }
+    /**
+     * This method compare unit weight of the current object with object of same or different type
+     * @param w1, w2
+     * @return true or false
+     */
+    public boolean compareWeight(Weight w1, Weight w2){
+        return  Double.compare(w1.value*w1.unit.baseUnitConversion, w2.value*w2.unit.baseUnitConversion) == 0;
+    }
+    /**
+     * This method add unit weight of the current object with object of same or different type
+     * @param w1, w2
+     * @return addition
+     */
+    public double addWeight(Weight w1, Weight w2) {
+        return Double.sum(w1.value*w1.unit.baseUnitConversion, w2.value*w2.unit.baseUnitConversion);
     }
 }

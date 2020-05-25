@@ -1,71 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bl.QuantityMeasurementTest" tests="65" skipped="0" failures="0" errors="0" timestamp="2020-05-25T04:36:02" hostname="DESKTOP-2TJPHRI" time="0.051">
+<testsuite name="com.bl.QuantityMeasurementTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-05-25T04:53:16" hostname="DESKTOP-2TJPHRI" time="0.002">
   <properties/>
-  <testcase name="givenCentimeter_WhenBothCentimeterAreNotEquals_ShouldReturnFalse" classname="com.bl.QuantityMeasurementTest" time="0.003"/>
-  <testcase name="givenTwoFeets_WhenFeetAreNegative_ShouldReturnThrowException" classname="com.bl.QuantityMeasurementTest" time="0.001"/>
-  <testcase name="given1InchAnd1Yard_WhenCompareBothLengthAreNotEqual_ShouldReturnFalse" classname="com.bl.QuantityMeasurementTest" time="0.0"/>
-  <testcase name="given1YardAnd90Centimeter_WhenCompareBothLengthEqual_ShouldReturnTrue" classname="com.bl.QuantityMeasurementTest" time="0.0"/>
-  <testcase name="given5CentimeterAnd2Inch_WhenCompareBothLengthEqual_ShouldReturnTrue" classname="com.bl.QuantityMeasurementTest" time="0.001"/>
-  <testcase name="givenFeets_WhenTypeOfFeetsAreEqual_ShouldReturnTrue" classname="com.bl.QuantityMeasurementTest" time="0.0"/>
-  <testcase name="given1InchAnd1Feet_WhenCompareBothLengthAreNotEqual_ShouldReturnFalse" classname="com.bl.QuantityMeasurementTest" time="0.0"/>
-  <testcase name="givenTwoFeets_WhenBothFeetAreNotEquals_ShouldReturnFalse" classname="com.bl.QuantityMeasurementTest" time="0.0"/>
-  <testcase name="givenFeets_WhenReferenceOfFeetsAreEqual_ShouldReturnTrue" classname="com.bl.QuantityMeasurementTest" time="0.0"/>
-  <testcase name="givenTwoFeets_WhenBothFeetAreEquals_ShouldReturnTrue" classname="com.bl.QuantityMeasurementTest" time="0.0"/>
-  <testcase name="givenGallon_WhenBothGallonAreEquals_ShouldReturnTrue" classname="com.bl.QuantityMeasurementTest" time="0.001"/>
-  <testcase name="givenLitre_WhenBothLitreAreNotEquals_ShouldReturnFalse" classname="com.bl.QuantityMeasurementTest" time="0.0"/>
-  <testcase name="given1FeetAnd30Centimeter_WhenCompareBothLengthEqual_ShouldReturnTrue" classname="com.bl.QuantityMeasurementTest" time="0.0"/>
-  <testcase name="givenLitres_WhenLitresAreNull_ShouldReturnThrowException" classname="com.bl.QuantityMeasurementTest" time="0.0"/>
-  <testcase name="givenLitreAndGallon_WhenCompareBothLengthAreEquals_ShouldReturnTrue" classname="com.bl.QuantityMeasurementTest" time="0.001"/>
-  <testcase name="givenGallonAndLitre_WhenCompareBothLengthAreEquals_ShouldReturnTrue" classname="com.bl.QuantityMeasurementTest" time="0.0"/>
-  <testcase name="givenYard_WhenBothYardsAreNotEquals_ShouldReturnFalse" classname="com.bl.QuantityMeasurementTest" time="0.0"/>
-  <testcase name="givenInches_WhenTypeOfInchesAreEqual_ShouldReturnTrue" classname="com.bl.QuantityMeasurementTest" time="0.0"/>
-  <testcase name="givenMillilitresAndLitre_WhenBothAreEquals_ShouldReturnTrue" classname="com.bl.QuantityMeasurementTest" time="0.001"/>
-  <testcase name="given2InchAnd2Inch_WhenAddBothLengthOfInches_ShouldReturnAddition" classname="com.bl.QuantityMeasurementTest" time="0.001"/>
-  <testcase name="givenInches_WhenReferenceOfInchesAreEqual_ShouldReturnTrue" classname="com.bl.QuantityMeasurementTest" time="0.0"/>
-  <testcase name="givenLitreAndMillilitres_WhenAddBothUnitsValue_ShouldReturnAdditionInLitres" classname="com.bl.QuantityMeasurementTest" time="0.001"/>
-  <testcase name="given1YardAnd1Centimeter_WhenCompareBothLengthAreNotEqual_ShouldReturnFalse" classname="com.bl.QuantityMeasurementTest" time="0.0"/>
-  <testcase name="given1FeetAnd1Centimeter_WhenCompareBothLengthAreNotEqual_ShouldReturnFalse" classname="com.bl.QuantityMeasurementTest" time="0.0"/>
-  <testcase name="given2InchAnd5Centimeter_WhenCompareBothLengthEqual_ShouldReturnTrue" classname="com.bl.QuantityMeasurementTest" time="0.0"/>
-  <testcase name="givenFeets_WhenFeetsAreNull_ShouldReturnThrowException" classname="com.bl.QuantityMeasurementTest" time="0.0"/>
-  <testcase name="givenFeets_WhenValueOfObjectAreEqual_ShouldReturnTrue" classname="com.bl.QuantityMeasurementTest" time="0.0"/>
-  <testcase name="given1YardAnd36Inch_WhenCompareBothLengthEqual_ShouldReturnTrue" classname="com.bl.QuantityMeasurementTest" time="0.0"/>
-  <testcase name="givenLitreAndMillilitres_WhenBothAreEquals_ShouldReturnTrue" classname="com.bl.QuantityMeasurementTest" time="0.0"/>
-  <testcase name="given1CentimeterAnd1Inch_WhenCompareBothLengthAreNotEqual_ShouldReturnFalse" classname="com.bl.QuantityMeasurementTest" time="0.0"/>
-  <testcase name="givenGallonAndMillilitres_WhenBothAreEquals_ShouldReturnTrue" classname="com.bl.QuantityMeasurementTest" time="0.001"/>
-  <testcase name="givenTwoYard_WhenBothAreEqual_ShouldReturnTrue" classname="com.bl.QuantityMeasurementTest" time="0.0"/>
-  <testcase name="givenTwoCentimeter_WhenCentimeterAreNegative_ShouldReturnThrowException" classname="com.bl.QuantityMeasurementTest" time="0.0"/>
-  <testcase name="given1FeetAnd1Feet_WhenCompareBothLengthAreEqual_ShouldReturnTrue" classname="com.bl.QuantityMeasurementTest" time="0.0"/>
-  <testcase name="given1FeetAnd2Inch_WhenAddBothLengthOfUnits_ShouldReturnAdditionInInch" classname="com.bl.QuantityMeasurementTest" time="0.001"/>
-  <testcase name="givenTwoInch_WhenBothInchAreEquals_ShouldReturnTrue" classname="com.bl.QuantityMeasurementTest" time="0.001"/>
-  <testcase name="givenTwoLitre_WhenLitreAreNegative_ShouldReturnThrowException" classname="com.bl.QuantityMeasurementTest" time="0.0"/>
-  <testcase name="givenLitre_WhenBothLitreAreEquals_ShouldReturnTrue" classname="com.bl.QuantityMeasurementTest" time="0.0"/>
-  <testcase name="given3FeetAnd1Yard_WhenCompareBothLengthEqual_ShouldReturnTrue" classname="com.bl.QuantityMeasurementTest" time="0.0"/>
-  <testcase name="givenLitre_WhenValueOfObjectAreEqual_ShouldReturnTrue" classname="com.bl.QuantityMeasurementTest" time="0.0"/>
-  <testcase name="given2InchAnd2Centimeter_WhenAddBothLengthOfUnits_ShouldReturnAdditionInInch" classname="com.bl.QuantityMeasurementTest" time="0.001"/>
-  <testcase name="givenTwoCentimeter_WhenBothAreEqual_ShouldReturnTrue" classname="com.bl.QuantityMeasurementTest" time="0.0"/>
-  <testcase name="givenInches_WhenInchesAreNull_ShouldReturnThrowException" classname="com.bl.QuantityMeasurementTest" time="0.0"/>
-  <testcase name="givenInches_WhenValueOfObjectAreEqual_ShouldReturnTrue" classname="com.bl.QuantityMeasurementTest" time="0.0"/>
-  <testcase name="givenFeetAndInch_WhenBothAreNotEquals_ShouldReturnFalse" classname="com.bl.QuantityMeasurementTest" time="0.0"/>
-  <testcase name="given1FeetAnd1Feet_WhenAddBothLengthOfUnits_ShouldReturnAdditionInInch" classname="com.bl.QuantityMeasurementTest" time="0.001"/>
-  <testcase name="given1FeetAnd12Inch_WhenCompare_ShouldReturnBothAreEqual" classname="com.bl.QuantityMeasurementTest" time="0.0"/>
-  <testcase name="givenMillilitresAndGallon_WhenBothAreEquals_ShouldReturnTrue" classname="com.bl.QuantityMeasurementTest" time="0.0"/>
-  <testcase name="given1FeetAnd1Yard_WhenCompareBothLengthAreNotEqual_ShouldReturnFalse" classname="com.bl.QuantityMeasurementTest" time="0.0"/>
-  <testcase name="givenMillilitres_WhenBothMillilitreAreEquals_ShouldReturnTrue" classname="com.bl.QuantityMeasurementTest" time="0.001"/>
-  <testcase name="givenCentimeter_WhenCentimeterAreNull_ShouldReturnThrowException" classname="com.bl.QuantityMeasurementTest" time="0.0"/>
-  <testcase name="givenLitre_WhenReferenceOfLitreAreEqual_ShouldReturnTrue" classname="com.bl.QuantityMeasurementTest" time="0.0"/>
-  <testcase name="givenGallonAndLitre_WhenAddBothUnitsValue_ShouldReturnAdditionInLitres" classname="com.bl.QuantityMeasurementTest" time="0.0"/>
-  <testcase name="givenYard_WhenTypeOfYardAreEqual_ShouldReturnTrue" classname="com.bl.QuantityMeasurementTest" time="0.0"/>
-  <testcase name="given12InchAnd1Feet_WhenCompare_ShouldReturnBothAreEqual" classname="com.bl.QuantityMeasurementTest" time="0.0"/>
-  <testcase name="given0FeetAnd0Inch_WhenCompareBothLengthAreEqual_ShouldReturnTrue" classname="com.bl.QuantityMeasurementTest" time="0.0"/>
-  <testcase name="given1InchAnd1Inch_WhenCompareBothLengthAreEqual_ShouldReturnTrue" classname="com.bl.QuantityMeasurementTest" time="0.0"/>
-  <testcase name="givenTwoYard_WhenYardsAreNegative_ShouldReturnThrowException" classname="com.bl.QuantityMeasurementTest" time="0.0"/>
-  <testcase name="givenInches_WhenBothInchesAreNotEquals_ShouldReturnFalse" classname="com.bl.QuantityMeasurementTest" time="0.0"/>
-  <testcase name="given36InchAnd1Yard_WhenCompareBothLengthEqual_ShouldReturnTrue" classname="com.bl.QuantityMeasurementTest" time="0.0"/>
-  <testcase name="givenYards_WhenYardsAreNull_ShouldReturnThrowException" classname="com.bl.QuantityMeasurementTest" time="0.0"/>
-  <testcase name="given1FeetAnd1Inch_WhenCompareBothLengthAreNotEqual_ShouldReturnFalse" classname="com.bl.QuantityMeasurementTest" time="0.002"/>
-  <testcase name="given1YardAnd1Yard_WhenCompareBothLengthAreEqual_ShouldReturnTrue" classname="com.bl.QuantityMeasurementTest" time="0.001"/>
-  <testcase name="given1YardAnd3Feet_WhenCompareBothLengthEqual_ShouldReturnTrue" classname="com.bl.QuantityMeasurementTest" time="0.0"/>
-  <testcase name="givenTwoInches_WhenInchesAreNegative_ShouldReturnThrowException" classname="com.bl.QuantityMeasurementTest" time="0.0"/>
+  <testcase name="givenGram_WhenBothGramAreEquals_ShouldReturnTrue" classname="com.bl.QuantityMeasurementTest" time="0.002"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
