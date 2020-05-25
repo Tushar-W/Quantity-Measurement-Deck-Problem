@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bl.QuantityMeasurementTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-05-25T05:00:56" hostname="DESKTOP-2TJPHRI" time="0.004">
+<testsuite name="com.bl.QuantityMeasurementTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-05-25T05:03:20" hostname="DESKTOP-2TJPHRI" time="0.003">
   <properties/>
-  <testcase name="givenGram_WhenBothGramAreNegative_ShouldReturnThrowException" classname="com.bl.QuantityMeasurementTest" time="0.004"/>
+  <testcase name="givenGram_WhenGramAreNull_ShouldReturnThrowException" classname="com.bl.QuantityMeasurementTest" time="0.003"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

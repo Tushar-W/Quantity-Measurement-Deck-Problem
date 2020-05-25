@@ -564,4 +564,15 @@ public class QuantityMeasurementTest {
             Assert.assertEquals(QuantityMeasurementException.ExceptionType.NEGATIVE_VALUE, e.type);
         }
     }
+    @Test
+    public void givenGram_WhenGramAreNull_ShouldReturnThrowException() {
+        try {
+            Weight gram = new Weight(Unit.GRAM, null);
+            Weight gram2 = new Weight(Unit.GRAM, null);
+            boolean equals = gram.equals(gram2);
+            Assert.assertFalse(equals);
+        } catch (QuantityMeasurementException e) {
+            Assert.assertEquals(QuantityMeasurementException.ExceptionType.NULL_VALUE, e.type);
+        }
+    }
 }
