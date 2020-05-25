@@ -487,4 +487,12 @@ public class QuantityMeasurementTest {
         boolean equals = ml.equals(ml2);
         Assert.assertTrue(equals);
     }
+
+    @Test
+    public void givenLitreAndMillilitres_WhenBothAreEquals_ShouldReturnTrue() {
+        Volume litre = new Volume(Unit.LITRE, 1.0);
+        Volume ml = new Volume(Unit.MILLILITRES, 1000.0);
+        boolean equals = litre.compare(ml);
+        Assert.assertTrue(equals);
+    }
 }
