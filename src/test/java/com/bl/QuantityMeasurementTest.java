@@ -638,4 +638,12 @@ public class QuantityMeasurementTest {
         boolean equals = cel.equals(cel2);
         Assert.assertTrue(equals);
     }
+
+    @Test
+    public void givenCelsiusAndFahrenheit_WhenBothAreEquals_ShouldReturnTrue() {
+        Temperature cel = new Temperature(Unit.CELSIUS, 0);
+        Temperature fah = new Temperature(Unit.FAHRENHEIT, 32);
+        boolean equals = cel.equate(fah);
+        Assert.assertTrue(equals);
+    }
 }
