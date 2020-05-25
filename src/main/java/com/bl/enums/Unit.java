@@ -1,6 +1,7 @@
 package com.bl.enums;
 
 import com.bl.model.Length;
+import com.bl.model.Temperature;
 import com.bl.model.Volume;
 import com.bl.model.Weight;
 
@@ -10,7 +11,8 @@ public enum Unit {
      */
     FEET(12.0), INCH(1.0), YARD(36.0), CENTIMETER(0.4),
     LITRE(1.0), GALLON(5.0),MILLILITRES(0.001),
-    GRAM(1.0), KILOGRAM(1000.0), TONNE(1000000.0);
+    GRAM(1.0), KILOGRAM(1000.0), TONNE(1000000.0),
+    CELSIUS(0), FAHRENHEIT(32);
     /**
      * final constant variable
      */
@@ -69,5 +71,9 @@ public enum Unit {
      */
     public double addWeight(Weight w1, Weight w2) {
         return Double.sum(w1.value*w1.unit.baseUnitConversion, w2.value*w2.unit.baseUnitConversion);
+    }
+
+    public boolean equate(Temperature t1,  Temperature t2) {
+        return false;
     }
 }
