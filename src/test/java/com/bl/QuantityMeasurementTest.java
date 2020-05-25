@@ -432,4 +432,14 @@ public class QuantityMeasurementTest {
             Assert.assertEquals(QuantityMeasurementException.ExceptionType.NEGATIVE_VALUE, e.type);
         }
     }
+
+    @Test
+    public void givenLitres_WhenLitresAreNull_ShouldReturnThrowException() {
+        try {
+            Volume litre = new Volume(Unit.LITRE, null);
+            Volume litre2 = new Volume(Unit.LITRE, null);
+        }catch (QuantityMeasurementException e){
+            Assert.assertEquals(QuantityMeasurementException.ExceptionType.NULL_VALUE, e.type);
+        }
+    }
 }
