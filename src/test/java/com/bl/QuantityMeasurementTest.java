@@ -519,4 +519,12 @@ public class QuantityMeasurementTest {
         boolean equals = gallon.compare(ml);
         Assert.assertTrue(equals);
     }
+
+    @Test
+    public void givenGallonAndLitre_WhenAddBothUnitsValue_ShouldReturnAdditionInLitres() {
+        Volume gallon = new Volume(Unit.GALLON, 1.0);
+        Volume litre = new Volume(Unit.LITRE, 5.0);
+        double addition = gallon.add(litre);
+        Assert.assertEquals(10.0, addition, 0.0);
+    }
 }
