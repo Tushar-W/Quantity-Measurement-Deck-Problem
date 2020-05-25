@@ -544,4 +544,12 @@ public class QuantityMeasurementTest {
         boolean equals = gram.equals(gram2);
         Assert.assertTrue(equals);
     }
+
+    @Test
+    public void givenGram_WhenBothGramAreNotEquals_ShouldReturnFalse() {
+        Weight gram = new Weight(Unit.GRAM, 0.0);
+        Weight gram2 = new Weight(Unit.GRAM, 2.0);
+        boolean equals = gram.equals(gram2);
+        Assert.assertFalse(equals);
+    }
 }
