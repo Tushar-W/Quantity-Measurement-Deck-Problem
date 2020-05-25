@@ -465,10 +465,18 @@ public class QuantityMeasurementTest {
     }
 
     @Test
-    public void givenGallonAndLitre_WhenCompareBothLengthAreEquals_ShouldReturnTrue() {
+    public void givenLitreAndGallon_WhenCompareBothLengthAreEquals_ShouldReturnTrue() {
         Volume litre = new Volume(Unit.LITRE, 1.0);
         Volume gallon = new Volume(Unit.GALLON, 0.2);
         boolean equals = litre.compare(gallon);
+        Assert.assertTrue(equals);
+    }
+
+    @Test
+    public void givenGallonAndLitre_WhenCompareBothLengthAreEquals_ShouldReturnTrue() {
+        Volume gallon = new Volume(Unit.GALLON, 1.0);
+        Volume litre = new Volume(Unit.LITRE, 5.0);
+        boolean equals = gallon.compare(litre);
         Assert.assertTrue(equals);
     }
 }
