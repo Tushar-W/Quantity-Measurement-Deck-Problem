@@ -10,7 +10,7 @@ public enum Unit {
      */
     FEET(12.0), INCH(1.0), YARD(36.0), CENTIMETER(0.4),
     LITRE(1.0), GALLON(5.0),MILLILITRES(0.001),
-    GRAM(1);
+    GRAM(1.0), KILOGRAM(1000.0);
     /**
      * final constant variable
      */
