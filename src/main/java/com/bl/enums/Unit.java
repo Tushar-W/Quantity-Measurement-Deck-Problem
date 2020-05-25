@@ -7,7 +7,8 @@ public enum Unit {
     /**
      * declaring enum constatnts
      */
-    FEET(12.0), INCH(1.0), YARD(36.0), CENTIMETER(0.4), LITRE(1);
+    FEET(12.0), INCH(1.0), YARD(36.0), CENTIMETER(0.4),
+    LITRE(1.0), GALLON(5.0);
     /**
      * final constant variable
      */
