@@ -38,6 +38,14 @@ public class Volume {
         return  unit.compareVolume(this,that);
     }
     /**
+     * This method add value of unit volume of the two objects
+     * @param that
+     * @return addition
+     */
+    public double add(Volume that) {
+        return unit.addVolumes(this,that);
+    }
+    /**
      * This method compares the equality of the current object with the object of same type
      * @param that
      * @return true or false

@@ -37,6 +37,14 @@ public class Length {
         return  unit.compareLength(this, that);
     }
     /**
+     * This method add values of  unit length of the objects
+     * @param that
+     * @return addition
+     */
+    public double add(Length that) {
+        return unit.addLength(this,that);
+    }
+    /**
      * This method compares the equality of the current object with the object of same type
      * @param that
      * @return true or false
@@ -56,9 +64,5 @@ public class Length {
     @Override
     public int hashCode() {
         return Objects.hash(value, unit);
-    }
-
-    public double add(Length that) {
-        return unit.add(this,that);
     }
 }
