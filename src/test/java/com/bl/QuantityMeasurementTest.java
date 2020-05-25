@@ -463,4 +463,12 @@ public class QuantityMeasurementTest {
         boolean equals = gallon.equals(gallon2);
         Assert.assertTrue(equals);
     }
+
+    @Test
+    public void givenGallonAndLitre_WhenCompareBothLengthAreEquals_ShouldReturnTrue() {
+        Volume litre = new Volume(Unit.LITRE, 1.0);
+        Volume gallon = new Volume(Unit.GALLON, 0.2);
+        boolean equals = litre.compare(gallon);
+        Assert.assertTrue(equals);
+    }
 }
