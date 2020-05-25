@@ -4,6 +4,7 @@ import com.bl.enums.Unit;
 import com.bl.exception.QuantityMeasurementException;
 import com.bl.model.Length;
 import com.bl.model.Volume;
+import com.bl.model.Weight;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -534,5 +535,13 @@ public class QuantityMeasurementTest {
         Volume ml = new Volume(Unit.MILLILITRES, 1000.0);
         double addition = litre.add(ml);
         Assert.assertEquals(2, addition, 0.0);
+    }
+
+    @Test
+    public void givenGram_WhenBothGramAreEquals_ShouldReturnTrue() {
+        Weight gram = new Weight(Unit.GRAM, 0.0);
+        Weight gram2 = new Weight(Unit.GRAM, 0.0);
+        boolean equals = gram.equals(gram2);
+        Assert.assertTrue(equals);
     }
 }
