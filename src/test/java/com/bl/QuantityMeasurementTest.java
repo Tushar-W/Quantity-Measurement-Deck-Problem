@@ -575,4 +575,10 @@ public class QuantityMeasurementTest {
             Assert.assertEquals(QuantityMeasurementException.ExceptionType.NULL_VALUE, e.type);
         }
     }
+
+    @Test
+    public void givenGram_WhenReferenceOfGramAreEqual_ShouldReturnTrue() {
+        Weight gram = new Weight(Unit.GRAM, 2.0);
+        Assert.assertTrue(gram.equals(gram));
+    }
 }
