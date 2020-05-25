@@ -442,4 +442,10 @@ public class QuantityMeasurementTest {
             Assert.assertEquals(QuantityMeasurementException.ExceptionType.NULL_VALUE, e.type);
         }
     }
+
+    @Test
+    public void givenLitre_WhenReferenceOfLitreAreEqual_ShouldReturnTrue() {
+        Volume litre = new Volume(Unit.LITRE, 2.0);
+        Assert.assertTrue(litre.equals(litre));
+    }
 }
