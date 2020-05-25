@@ -3,6 +3,7 @@
 import com.bl.enums.Unit;
 import com.bl.exception.QuantityMeasurementException;
 import com.bl.model.Length;
+import com.bl.model.Temperature;
 import com.bl.model.Volume;
 import com.bl.model.Weight;
 import org.junit.Assert;
@@ -628,5 +629,13 @@ public class QuantityMeasurementTest {
         Weight gram = new Weight(Unit.GRAM, 1000.0);
         double addition = tonne.add(gram);
         Assert.assertEquals(1001000, addition, 0.0);
+    }
+
+    @Test
+    public void givenTemperature_WhenBothAreEquals_ShouldReturnTrue() {
+        Temperature cel = new Temperature(Unit.CELSIUS, 0);
+        Temperature cel2 = new Temperature(Unit.CELSIUS, 0);
+        boolean equals = cel.equals(cel2);
+        Assert.assertTrue(equals);
     }
 }
