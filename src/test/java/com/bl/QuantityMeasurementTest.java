@@ -421,4 +421,15 @@ public class QuantityMeasurementTest {
         boolean equals = litre.equals(litre2);
         Assert.assertFalse(equals);
     }
+
+    @Test
+    public void givenTwoLitre_WhenLitreAreNegative_ShouldReturnThrowException() {
+        try{
+            Volume litre = new Volume(Unit.LITRE, -1.0);
+            Volume litre2 = new Volume(Unit.LITRE, -2.0);
+            boolean equals = litre.equals(litre2);
+        }catch (QuantityMeasurementException e){
+            Assert.assertEquals(QuantityMeasurementException.ExceptionType.NEGATIVE_VALUE, e.type);
+        }
+    }
 }
