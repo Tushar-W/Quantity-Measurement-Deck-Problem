@@ -74,6 +74,10 @@ public enum Unit {
     }
 
     public boolean equate(Temperature t1,  Temperature t2) {
+        if (t1.unit.equals(Unit.CELSIUS) && t2.unit.equals(Unit.FAHRENHEIT))
+            return ((t1.value * 9/5) + 32 == t2.value);
+        if (t1.unit.equals(Unit.FAHRENHEIT) && t2.unit.equals(Unit.CELSIUS))
+            return ((t1.value - 32) * 5/9 == (t2.value));
         return false;
     }
 }
