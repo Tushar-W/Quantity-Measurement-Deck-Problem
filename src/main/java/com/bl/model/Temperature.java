@@ -8,8 +8,6 @@ package com.bl.model;
 import com.bl.enums.Unit;
 import com.bl.exception.QuantityMeasurementException;
 
-import java.util.Objects;
-
 public class Temperature {
     /**
      * value variable store the number entered by the user as the input
@@ -52,10 +50,5 @@ public class Temperature {
                     "VALUE_IS_NEGATIVE");
         return value == ((Temperature) that).value &&
                 unit == ((Temperature) that).unit;
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(value, unit);
     }
 }

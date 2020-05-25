@@ -61,9 +61,4 @@ public class Volume {
         return Double.compare(volume.value, value) == 0 &&
                 unit == volume.unit;
     }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(value, unit);
-    }
 }

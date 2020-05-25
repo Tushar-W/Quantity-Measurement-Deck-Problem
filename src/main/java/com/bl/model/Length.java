@@ -14,13 +14,13 @@ public class Length {
      * value variable store the number entered by the user as the input
      * unit variable store the enum constanats
      */
-    public final int value;
+    public final double value;
     public Unit unit;
     /**
      * Parameterized constructor to take one input value
      * @param unit, value
      */
-    public Length(Unit unit, Integer value) throws QuantityMeasurementException {
+    public Length(Unit unit, Double value) throws QuantityMeasurementException {
         try{
             this.unit = unit;
             this.value = value;
@@ -42,7 +42,7 @@ public class Length {
      * @return addition
      */
     public double add(Length that) {
-        return unit.addLength(this,that);
+        return unit.addLength(this, that);
     }
     /**
      * This method compares the equality of the current object with the object of same type
@@ -59,10 +59,5 @@ public class Length {
                                                           "VALUE_IS_NEGATIVE");
         return value == length.value &&
                 unit == length.unit;
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(value, unit);
     }
 }

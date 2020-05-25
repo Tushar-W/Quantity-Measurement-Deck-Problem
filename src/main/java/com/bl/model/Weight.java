@@ -61,9 +61,4 @@ public class Weight {
         return Double.compare(weight.value, value) == 0 &&
                 unit == weight.unit;
     }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(value, unit);
-    }
 }
