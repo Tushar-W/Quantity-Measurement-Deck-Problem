@@ -448,4 +448,19 @@ public class QuantityMeasurementTest {
         Volume litre = new Volume(Unit.LITRE, 2.0);
         Assert.assertTrue(litre.equals(litre));
     }
+
+    @Test
+    public void givenLitre_WhenValueOfObjectAreEqual_ShouldReturnTrue() {
+        Volume litre = new Volume(Unit.LITRE, 3.0);
+        Volume litre2 = new Volume(Unit.LITRE, 3.0);
+        Assert.assertTrue(litre.equals(litre2));
+    }
+
+    @Test
+    public void givenGallon_WhenBothGallonAreEquals_ShouldReturnTrue() {
+        Volume gallon = new Volume(Unit.GALLON, 0.0);
+        Volume gallon2 = new Volume(Unit.GALLON, 0.0);
+        boolean equals = gallon.equals(gallon2);
+        Assert.assertTrue(equals);
+    }
 }
