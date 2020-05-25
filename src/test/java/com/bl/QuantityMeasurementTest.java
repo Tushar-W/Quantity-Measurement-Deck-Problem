@@ -581,4 +581,12 @@ public class QuantityMeasurementTest {
         Weight gram = new Weight(Unit.GRAM, 2.0);
         Assert.assertTrue(gram.equals(gram));
     }
+
+    @Test
+    public void givenGramAndKilogram_WhenBothAreEquals_ShouldReturnTrue() {
+        Weight gram = new Weight(Unit.GRAM, 0.0);
+        Weight kg = new Weight(Unit.KILOGRAM, 0.0);
+        boolean compareCheck = gram.compare(kg);
+        Assert.assertTrue(compareCheck);
+    }
 }
